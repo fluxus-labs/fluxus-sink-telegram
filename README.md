@@ -70,4 +70,8 @@ let mut sink = TelegramSink::new(
 
 ## License
 
-This project is licensed under the Apache License, Version 2.0.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
