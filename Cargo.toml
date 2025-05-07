@@ -1,0 +1,36 @@
+[package]
+name = "fluxus-sink-telegram"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+authors = ["Fluxus Team"]
+description = "A Telegram sink component for the Fluxus stream processing framework, enabling real-time message delivery to Telegram channels and chats."
+homepage = "https://github.com/fluxus-labs/fluxus-sink-telegram"
+repository = "https://github.com/fluxus-labs/fluxus-sink-telegram"
+readme = "README.md"
+categories = ["database", "development-tools", "asynchronous", "science"]
+keywords = [
+    "stream-processing",
+    "real-time",
+    "data-processing",
+    "analytics",
+    "async",
+    "telegram",
+]
+
+[dependencies]
+fluxus = { version="0.1", features = ["full"] }
+
+tokio = { version = "1", features = ["full"] }
+futures = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+thiserror = "2.0"
+async-trait = "0.1"
+tracing = "0.1"
+teloxide = "0.15.0"
+reqwest = "0.12.15"
+
+[dev-dependencies]
+cargo-husky = { version = "1", features = ["precommit-hook", "run-cargo-test", "run-cargo-clippy", "run-cargo-fmt"] }
