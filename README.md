@@ -17,7 +17,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-fluxus-sink-telegram = "0.1.0"
+fluxus-sink-telegram = "0.1"
 ```
 
 ## Usage
